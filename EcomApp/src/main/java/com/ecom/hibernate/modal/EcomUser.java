@@ -32,7 +32,14 @@ public class EcomUser implements Serializable {
 	private UserCart userCart;
 	
 	
-	
+	public boolean isRetailer() {
+		return isRetailer;
+	}
+
+	public void setRetailer(boolean isRetailer) {
+		this.isRetailer = isRetailer;
+	}
+
 	public UserCart getUserCart() {
 		return userCart;
 	}

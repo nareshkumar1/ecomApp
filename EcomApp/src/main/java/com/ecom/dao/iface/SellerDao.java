@@ -1,6 +1,7 @@
 package com.ecom.dao.iface;
 
 import java.util.List;
+import java.util.Map;
 
 import com.ecom.hibernate.modal.Order;
 import com.ecom.hibernate.modal.Product;
@@ -10,7 +11,7 @@ public interface SellerDao {
 
 	public void createSeller(Seller seller);
 
-	public void uploadNewProduct(long sellerId, Product product);
+	public void uploadNewProduct(Map<String, String> product);
 
 	public List<Product> getAllProduct(long sellerId);
 
@@ -25,4 +26,6 @@ public interface SellerDao {
 	public void updateProduct(Product product);
 
 	public void cancleOrder(long orderId);
+	
+	public boolean isSellerExists(String username);
 }

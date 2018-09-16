@@ -25,7 +25,7 @@ public class Product implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "seller_id")
 	private Seller seller;
-
+	
 	@OneToOne
 	private ProductCategory category;
 

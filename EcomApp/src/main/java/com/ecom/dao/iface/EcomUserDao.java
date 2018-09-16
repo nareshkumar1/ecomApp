@@ -15,7 +15,7 @@ public interface EcomUserDao {
 
 	public void addItemToCart(long userId,long productId);
 
-	public void createOrder(long productId,long userId);
+	public long createOrder(long userId,long productId);
 	
 	public List<Order> getAllOrders(long userId);
 	

@@ -24,10 +24,10 @@ public class Seller implements Serializable {
 	private boolean isActive = true;
 
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "seller")
-	private Set<Product> products;
-
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "seller")
 	private Set<Order> orders;
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "seller")
+	private Set<Product> products;
 
 	public long getId() {
 		return id;
