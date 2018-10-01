@@ -17,6 +17,11 @@ import javax.persistence.OneToMany;
 @Entity(name="order_info")
 public class Order implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -243420393856812395L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;

@@ -13,6 +13,10 @@ import javax.persistence.OneToMany;
 @Entity
 public class Seller implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8751831637064415693L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;

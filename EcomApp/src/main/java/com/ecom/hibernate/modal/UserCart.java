@@ -15,6 +15,11 @@ import javax.persistence.OneToOne;
 @Entity
 public class UserCart implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5617066368517888373L;
+
 	@Id
 	@GeneratedValue(strategy =GenerationType.IDENTITY)
 	private long cartId;

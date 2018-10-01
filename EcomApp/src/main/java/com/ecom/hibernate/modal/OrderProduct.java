@@ -12,6 +12,11 @@ import javax.persistence.ManyToOne;
 @Entity
 public class OrderProduct implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4878460623838599483L;
+
 	@Id
 	@GeneratedValue(strategy =GenerationType.IDENTITY)
 	private long id;

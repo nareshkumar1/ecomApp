@@ -14,6 +14,11 @@ import javax.persistence.OneToOne;
 @Entity
 public class EcomUser implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8217148729295739402L;
+	
 	@Id
 	@GeneratedValue(strategy =GenerationType.IDENTITY)
 	private long id;
